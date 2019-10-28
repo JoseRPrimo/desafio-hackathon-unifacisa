@@ -1,0 +1,19 @@
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">NOME</th>
+      <th scope="col">CATEGORIA</th>
+      <th scope="col">VALOR</th>
+      <th scope="col">OPÇÕES</th>
+    </tr>
+  </thead>
+  <tbody >
+    <tr *ngFor="let produto of produtos">
+      <td>{{produto.nome}} </td>
+      <td>{{produto.categoriaId}}</td>
+      <td>{{produto.valor}}</td>
+      <td><button type="button" class="btn meu-botao btn-primary btn-sm">Ü</button><button type="button"
+          class="btn btn-primary btn-sm">◘</button></td>
+    </tr>
+  </tbody>
+</table>
